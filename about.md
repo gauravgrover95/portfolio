@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-*To be Updates*
+*To be Updated*
 
 
 [jekyll-organization]: https://github.com/jekyll
