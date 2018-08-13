@@ -132,7 +132,9 @@ In summary following features were completed:
 - Provides basic documentation for some files of the code
 - Documents minor issues
 
-Acknowledgements
+
+
+## Acknowledgements
 
 Many many thanks to my mentor and supervisor Dr. Helikar for considering me worthy enough to provide this golden learning and contributing opportunity.
 
