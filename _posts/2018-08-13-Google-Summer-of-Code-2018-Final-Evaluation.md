@@ -140,7 +140,7 @@ In summary following features were completed:
 
 ### Acknowledgements
 
-Many many thanks to my mentor and supervisor Dr. Helikar for considering me worthy enough to provide this golden learning and contributing opportunity.
+Many many thanks to my mentor and supervisor Dr. Tomas Helikar for considering me worthy enough to provide this golden learning and contributing opportunity.
 
 My other awesomely experienced mentor Ales who helped me from time to time and boosted the progress of the project.
 
