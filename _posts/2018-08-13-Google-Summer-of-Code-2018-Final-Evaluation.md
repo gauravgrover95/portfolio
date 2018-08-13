@@ -18,7 +18,7 @@ My objective in the Google Summer of Code 2018 would be to extend ccNetViz to fu
 
 The library imposes a max-size limitation on the nodes to utilize maximum space available in the view. On zooming, the area under the mouse pointer must remain in focus for intuitive user experience. We proposed that the node under mouse pointer should also stay in focus when zoomed. 
 
-But we was observed that due to the max-size limitation on the node, it was getting panned away. The issue mentioned in detail in this [Github issue](https://github.com/HelikarLab/ccNetViz/issues/7).
+But we observed that due to the max-size limitation on the node, it was getting panned away. The issue mentioned in detail in this [Github issue](https://github.com/HelikarLab/ccNetViz/issues/7).
 
 Commit history for resolution of this issue can be found [here](https://github.com/gauravgrover95/ccnetviz_demo/commits/master) and the code merged by my mentor Ales can be found [here](https://github.com/HelikarLab/ccNetViz/commit/2ec120f8379fbfee81ead1cdcaee0383cc4bb4d1).
 
