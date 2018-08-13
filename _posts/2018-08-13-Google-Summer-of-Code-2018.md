@@ -124,18 +124,16 @@ In future, I believe the following tasks could further improve the library:
 
 In summary, following features were completed:
 
-- Fixing of the zoom feature
-- Signed Distance Field generation algorithm & TinySDF implementation
-- TinySDF testing and optimization
-- Installation of web-workers
-- Updating plugins of the library: removal of closure compiler and prefer uglifyJS
-- shifts build system from node-scripts to webpack cli build
-- Layout calculation in the background thread
-- Fixes gibberish layout name bug
-- Fixes image texture not found bug
-- Provides basic documentation for some files of the code
-- Documents minor issues
-
+- Fixed of the zoom feature
+- Generated client-side Signed Distance Fields for labels on-demand
+- Tested and optimized for Signed Distance Fields generation
+- Updated plugins of the library: removal of closure compiler and installation uglifyJS
+- Shifted build system from node-scripts to webpack cli build
+- Installed of web-workers
+- Computed layout in the background thread
+- Fixed random layout value bug
+- Wrote basic documentation for some files of the code
+- Documented remaining low priority issues
 
 
 ### Acknowledgments
@@ -146,7 +144,7 @@ My other awesomely experienced mentor Ales who helped me from time to time and b
 
 Google Summer of Code program for this wonderful learning experience to put my first baby steps in the open-source world. I hope to keep contributing back to develop amazing tech.
 
-All the open source contributors briefly mentioned above in the report who freely distributed their work to advance the science and technology for the betterment of all.
+All the open source contributors briefly mentioned above who freely distributed their work to advance the science and technology for the betterment of all.
 
 
 Link to all commits: [https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95](https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95)
