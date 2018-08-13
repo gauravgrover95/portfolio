@@ -149,9 +149,7 @@ Google Summer of Code program for this wonderful learning experience to put my f
 All the open source contributors briefly mentioned above in report who freely distributed their work to advance the science and technology for betterment of all.
 
 
-Link to all commits 
-
-[https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95](https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95)
+Link to all commits: [https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95](https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95)
 
 
 
