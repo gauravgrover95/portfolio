@@ -63,7 +63,7 @@ Proper tweaking of configuration for both the modules was performed for making t
 
 In the previous version, node-scripts were used to integrate webpack which loads the JS modules and google closure compiler which optimizes the compiled code.
 
-In current version, latest community accepted practice of using a single webpack.config.js file was implemented. [Webpack migration guide](https://webpack.js.org/migrate/) helped significantly to determine what will work and break during the upgrade. 
+In current version, latest community accepted practice of using a single webpack.config.js file was implemented. [Webpack migration guide](https://webpack.js.org/migrate/4/) helped significantly to determine what will work and break during the upgrade. 
 
 We attempted to merge webpack and [google-closure-compiler](https://github.com/google/closure-compiler-js) together but found that official webpack plugin did not support the latest webpack v4 ([github issues](https://github.com/webpack-contrib/closure-webpack-plugin/issues/47)). 
 
