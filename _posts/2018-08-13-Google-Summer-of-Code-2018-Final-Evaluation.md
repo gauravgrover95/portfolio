@@ -3,7 +3,7 @@
 
 #### Description
 
-[ccNetViz](http://helikarlab.github.io/ccNetViz/) is a high performance, lightweight and customizable client-side library aimed to solve the problem of visualizing and analysing complex network graphs on the web. It utilizes the power of parallely computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
+[ccNetViz](http://helikarlab.github.io/ccNetViz/) is a high performance, lightweight, and customizable client-side library aimed to solve the problem of visualizing and analyzing complex network graphs on the web. It utilizes the power of parallelly computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
 
 The Library aims to break the efficiency limitation of visualizing large networks developed using sequentially computed SVG canvas graphics. This limitation can be generally observed in all popular web network visualization libraries.
 
@@ -16,7 +16,7 @@ My objective in the Google Summer of Code 2018 would be to extend ccNetViz to fu
 
 #### Fix zoom for large networks
 
-The library imposes a max-size limitation on the nodes to utilize maximum space available in the view. On zooming, the area under the mouse pointer must remain in focus for intuitive user experience. We proposed that the node under mouse pointer should also stay in focus when zoomed. 
+The library imposes a max-size limitation on the nodes to utilize maximum space available in the view. On zooming, the area under the mouse pointer must remain in focus for intuitive user experience. We proposed that the node under the mouse pointer should also stay in focus when zoomed. 
 
 But we observed that due to the max-size limitation on the node, it was getting panned away. The issue mentioned in detail in this [Github issue](https://github.com/HelikarLab/ccNetViz/issues/7).
 
@@ -31,9 +31,9 @@ Limitations faced in the user experience with this technique were:
 1. Dependency on the server
 2. No real-time support for unique font processing
 
-This year we accepted this as challenge to eliminate the drawbacks.
+This year we accepted this as a challenge to eliminate the drawbacks.
 
-A real-time client-side generation of SDF text was proposed. We researched for an efficient, linear time implementation of the distance transform algorithm developed at Brown University by *P. Felzenszwalb* and *D. Huttenlocher*. Algorithm was published in *Theory of Computing* journal in 2012 can be found [here](http://cs.brown.edu/people/pfelzens/dt/).
+A real-time client-side generation of SDF text was proposed. We researched for an efficient, linear time implementation of the distance transform algorithm developed at Brown University by *P. Felzenszwalb* and *D. Huttenlocher*. The algorithm was published in *Theory of Computing* journal in 2012 can be found [here](http://cs.brown.edu/people/pfelzens/dt/).
 
 We also found an open-sourced port of this algorithm from C++ to JS performed by mapbox™ available [here](https://github.com/mapbox/tiny-sdf). Thanks to the author, [Vladimir Agafonkin](https://github.com/mourner) and other contributors for this work.
 
@@ -42,7 +42,7 @@ It was a challenge to optimizing the code from mapbox™ library to fit in the c
 Ultimately, the problem was solved and the JS module developed for this task can be found [here](https://github.com/HelikarLab/ccNetViz/blob/master/src/texts/sdf/spriteGenerator.js).
 
 
-#### Test and debug client side SDF sprite-sheet generation
+#### Test and debug client-side SDF sprite-sheet generation
 
 Proper investment of time for testing and debugging was essential especially because of  the number of independent configuration variables mentioned below:
 
@@ -63,20 +63,20 @@ Proper tweaking of configuration for both the modules was performed for making t
 
 In the previous version, node-scripts were used to integrate webpack which loads the JS modules and google closure compiler which optimizes the compiled code.
 
-In current version, latest community accepted practice of using a single webpack.config.js file was implemented. [Webpack migration guide](https://webpack.js.org/migrate/4/) helped significantly to determine what will work and break during the upgrade. 
+In the current version, latest community accepted practice of using a single webpack.config.js file was implemented. [Webpack migration guide](https://webpack.js.org/migrate/4/) helped significantly to determine what will work and break during the upgrade. 
 
-We attempted to merge webpack and [google-closure-compiler](https://github.com/google/closure-compiler-js) together but found that official webpack plugin did not support the latest webpack v4 ([github issues](https://github.com/webpack-contrib/closure-webpack-plugin/issues/47)). 
+We attempted to merge webpack and [google-closure-compiler](https://github.com/google/closure-compiler-js) together but found that official webpack plugin did not support the latest webpack v4 ([GitHub issues](https://github.com/webpack-contrib/closure-webpack-plugin/issues/47)). 
 
 So, we removed the dependency on closure compiler and chose [uglifyjs plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin) instead.
 
-The webpack build system and all the npm modules were updated. Most notably updation of babel dependencies produced immediate benefits which were observed in the later stages of the project.
+The webpack build system and all the npm modules were updated. babel dependencies were one of the important npm package update. Immediate benefits were observed in the later stages of the project.
 
 The corresponding commit history for the update process can be found [here](https://github.com/HelikarLab/ccNetViz/pull/16).
 
 
 #### Compute layouts in the background thread
 
-A significant work was done as part of GSoC 2017 by [Renato Fabbri](https://github.com/ttm) supporting several layouts for large graphs. This is one of the most important feature of the library.
+A significant work was done as part of GSoC 2017 by [Renato Fabbri](https://github.com/ttm) supporting several layouts for large graphs. This is one of the most important features of the library.
 
 We observed that the layout computations were having different complexities and with increasing number of nodes/edges a significant time and computing resources were consumed. This caused blockage of main JS thread and as a result blockage of user interactivity. 
 
@@ -89,7 +89,7 @@ Obstacles:
 
 It was also proposed to serialize and deserialize JS data objects to [Transferable Object](https://developer.mozilla.org/en-US/docs/Web/API/Transferable) as mentioned in the [HTML5 Rocks web-worker guide](https://www.html5rocks.com/en/tutorials/workers/basics/) for supporting call-by-reference mechanism. But that would’ve added another level of complexity in the code and was saved for later.
 
-Task was achieved and the commit history can be found [here](https://github.com/HelikarLab/ccNetViz/pull/16) and [here](https://github.com/HelikarLab/ccNetViz/pull/22). The code uses latest [async-await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) syntax to write async code in a more intuitive and easy to understand manner as compared to usage of plain JS promises.
+The task was achieved and the commit history can be found [here](https://github.com/HelikarLab/ccNetViz/pull/16) and [here](https://github.com/HelikarLab/ccNetViz/pull/22). The code uses latest [async-await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) syntax to write async code in a more intuitive and easy to understand manner as compared to the usage of plain JS promises.
 
 
 
@@ -122,7 +122,7 @@ In future, I believe the following tasks could further improve the library:
 
 ### Conclusion
 
-In summary following features were completed:
+In summary, following features were completed:
 
 - Fixing of the zoom feature
 - Signed Distance Field generation algorithm & TinySDF implementation
@@ -138,7 +138,7 @@ In summary following features were completed:
 
 
 
-### Acknowledgements
+### Acknowledgments
 
 Many many thanks to my mentor and supervisor Dr. Tomas Helikar for considering me worthy enough to provide this golden learning and contributing opportunity.
 
@@ -146,7 +146,7 @@ My other awesomely experienced mentor Ales who helped me from time to time and b
 
 Google Summer of Code program for this wonderful learning experience to put my first baby steps in the open-source world. I hope to keep contributing back to develop amazing tech.
 
-All the open source contributors briefly mentioned above in report who freely distributed their work to advance the science and technology for betterment of all.
+All the open source contributors briefly mentioned above in the report who freely distributed their work to advance the science and technology for the betterment of all.
 
 
 Link to all commits: [https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95](https://github.com/HelikarLab/ccNetViz/commits/master?author=gauravgrover95)
