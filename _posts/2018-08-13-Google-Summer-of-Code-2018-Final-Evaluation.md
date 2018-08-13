@@ -1,7 +1,7 @@
 ## Project Introduction
 
 
-#### Description
+### Description
 
 [ccNetViz](http://helikarlab.github.io/ccNetViz/) is a high performance, lightweight and customizable client-side library aimed to solve the problem of visualizing and analysing complex network graphs on the web. It utilizes the power of parallely computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
 
