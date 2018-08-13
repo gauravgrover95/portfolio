@@ -3,7 +3,7 @@
 
 #### Description
 
-ccNetViz is a high performance, lightweight and customizable client-side library aimed to solve the problem of visualizing and analysing complex network graphs on the web. It utilizes the power of parallely computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
+[ccNetViz](http://helikarlab.github.io/ccNetViz/) is a high performance, lightweight and customizable client-side library aimed to solve the problem of visualizing and analysing complex network graphs on the web. It utilizes the power of parallely computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
 
 The Library aims to break the efficiency limitation of visualizing large networks developed using sequentially computed SVG canvas graphics. This limitation can be generally observed in all popular web network visualization libraries.
 
@@ -18,28 +18,28 @@ My objective in the Google Summer of Code 2018 would be to extend ccNetViz to fu
 
 The library imposes a max-size limitation on the nodes to utilize maximum space available in the view. On zooming, the area under the mouse pointer must remain in focus for intuitive user experience. We proposed that the node under mouse pointer should also stay in focus when zoomed. 
 
-But we was observed that due to the max-size limitation on the node, it was getting away. The issue mentioned in detail in this Github issue.
+But we was observed that due to the max-size limitation on the node, it was getting away. The issue mentioned in detail in this [Github issue](https://github.com/HelikarLab/ccNetViz/issues/7).
 
-Commit history for resolution of this issue can be found here and the code merged by my mentor Ales can be found here.
+Commit history for resolution of this issue can be found [here](https://github.com/gauravgrover95/ccnetviz_demo/commits/master) and the code merged by my mentor Ales can be found [here](https://github.com/HelikarLab/ccNetViz/commit/2ec120f8379fbfee81ead1cdcaee0383cc4bb4d1).
 
 
 #### Implement client side SDF sprite-sheet generation
 
-Implementation of Signed Distance Fields (SDF) of commonly used text characters was performed by Znbiz in Google Summer of Code 2016. In the project report, the comparison of 3 available text drawing techniques and why SDF produces the highest quality text labels was discussed.
+Implementation of Signed Distance Fields (SDF) of commonly used text characters was performed by [Znbiz](https://github.com/Znbiz) in Google Summer of Code 2016. In the [project report](https://znbiz.github.io/gsoc2016/), the comparison of 3 available text drawing techniques and why SDF produces the highest quality text labels was discussed.
 
 Limitations faced in the user experience with this technique were:
-Dependency on the server
-No real-time support for unique font processing
+1. Dependency on the server
+2. No real-time support for unique font processing
 
 This year we accepted this as challenge to eliminate the drawbacks.
 
-A real-time client-side generation of SDF text was proposed. We researched for an efficient, linear time implementation of the distance transform algorithm developed at Brown University by P. Felzenszwalb and D. Huttenlocher. Algorithm was published in Theory of Computing journal in 2012 can be found here.
+A real-time client-side generation of SDF text was proposed. We researched for an efficient, linear time implementation of the distance transform algorithm developed at Brown University by P. Felzenszwalb and D. Huttenlocher. Algorithm was published in Theory of Computing journal in 2012 can be found [here](http://cs.brown.edu/people/pfelzens/dt/).
 
-We also found an open-sourced port of this algorithm from C++ to JS performed by mapbox™ available here. Thanks to the authors Vladimir Agafonkin and other contributors for this work.
+We also found an open-sourced port of this algorithm from C++ to JS performed by mapbox™ available [here](https://github.com/mapbox/tiny-sdf). Thanks to the authors [Vladimir Agafonkin](https://github.com/mourner) and other contributors for this work.
 
 It was a challenge to optimizing the code from mapbox™ library to fit in the current rendering pipeline of ccNetViz as it required the understanding of discrete mathematics, algorithms and image processing altogether. Code reading without existing documentations introduced another level of complexity.
 
-Ultimately, the problem was solved and the JS module developed for this task can be found here.
+Ultimately, the problem was solved and the JS module developed for this task can be found [here](https://github.com/HelikarLab/ccNetViz/blob/master/src/texts/sdf/spriteGenerator.js).
 
 
 #### Test and debug client side SDF sprite-sheet generation
