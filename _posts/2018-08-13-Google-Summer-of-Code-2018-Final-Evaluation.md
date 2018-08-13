@@ -33,7 +33,7 @@ Limitations faced in the user experience with this technique were:
 
 This year we accepted this as challenge to eliminate the drawbacks.
 
-A real-time client-side generation of SDF text was proposed. We researched for an efficient, linear time implementation of the distance transform algorithm developed at Brown University by P. Felzenszwalb and D. Huttenlocher. Algorithm was published in Theory of Computing journal in 2012 can be found [here](http://cs.brown.edu/people/pfelzens/dt/).
+A real-time client-side generation of SDF text was proposed. We researched for an efficient, linear time implementation of the distance transform algorithm developed at Brown University by *P. Felzenszwalb* and *D. Huttenlocher*. Algorithm was published in *Theory of Computing* journal in 2012 can be found [here](http://cs.brown.edu/people/pfelzens/dt/).
 
 We also found an open-sourced port of this algorithm from C++ to JS performed by mapbox™ available [here](https://github.com/mapbox/tiny-sdf). Thanks to the authors [Vladimir Agafonkin](https://github.com/mourner) and other contributors for this work.
 
