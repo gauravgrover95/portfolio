@@ -37,7 +37,7 @@ A real-time client-side generation of SDF text was proposed. We researched for a
 
 We also found an open-sourced port of this algorithm from C++ to JS performed by mapbox™ available [here](https://github.com/mapbox/tiny-sdf). Thanks to the author, [Vladimir Agafonkin](https://github.com/mourner) and other contributors for this work.
 
-It was a challenge to optimizing the code from mapbox™ library to fit in the current rendering pipeline of ccNetViz as it required the understanding of discrete mathematics, algorithms and image processing altogether. Code reading without existing documentations introduced another level of complexity.
+It was a challenge to optimize the code from mapbox™ library to fit in the current rendering pipeline of ccNetViz as it required the understanding of discrete mathematics, algorithms and image processing altogether. Code reading without existing documentations introduced another level of complexity.
 
 Ultimately, the problem was solved and the JS module developed for this task can be found [here](https://github.com/HelikarLab/ccNetViz/blob/master/src/texts/sdf/spriteGenerator.js).
 
