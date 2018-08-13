@@ -1,12 +1,6 @@
-Google Summer of Code 2018
+## Project Introduction
 
-Project Introduction
-
-Brief
-
-A Graph theory (a.k.a. network) library for analysis and visualisation
-
-Description
+### Description
 
 ccNetViz is a high performance, lightweight and customizable client-side library aimed to solve the problem of visualizing and analysing complex network graphs on the web. It utilizes the power of parallely computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
 
