@@ -95,17 +95,17 @@ Task was achieved and the commit history can be found [here](https://github.com/
 
 #### Other fixes and contributions
 
-Proper error report for faulty layout name was produced. <[Github Issue](https://github.com/HelikarLab/ccNetViz/issues/21)> <[Code](https://github.com/HelikarLab/ccNetViz/pull/22/commits/e708bcdfb09b8b2da95084345b520bff2a561e11)>
-Some documentation was written alongside. <[here](https://github.com/HelikarLab/ccNetViz/commit/f2a377536f80d63395d6ea0fd078a572bd22762f#diff-331a629f1728de6fe30b04dbdd13568a)>, <[here](https://github.com/HelikarLab/ccNetViz/commit/ddf249a76293399a30cc7075d3a603866d97a68b#diff-88c0fa8951783d96e57d5221523465c9)>
+- Proper error report for faulty layout name was produced. <[Github Issue](https://github.com/HelikarLab/ccNetViz/issues/21)> <[Code](https://github.com/HelikarLab/ccNetViz/pull/22/commits/e708bcdfb09b8b2da95084345b520bff2a561e11)>
+- Some documentation was written alongside. <[here](https://github.com/HelikarLab/ccNetViz/commit/f2a377536f80d63395d6ea0fd078a572bd22762f#diff-331a629f1728de6fe30b04dbdd13568a)>, <[here](https://github.com/HelikarLab/ccNetViz/commit/ddf249a76293399a30cc7075d3a603866d97a68b#diff-88c0fa8951783d96e57d5221523465c9)>
 
 Also, some issues and improvements for future builds were documented. Details can be found below:
 
 - [https://github.com/HelikarLab/ccNetViz/issues/23](https://github.com/HelikarLab/ccNetViz/issues/23)
-- https://github.com/HelikarLab/ccNetViz/issues/26
-- https://github.com/HelikarLab/ccNetViz/issues/25
-- https://github.com/HelikarLab/ccNetViz/issues/24
-- https://github.com/HelikarLab/ccNetViz/issues/20
-- https://github.com/HelikarLab/ccNetViz/issues/8 
+- [https://github.com/HelikarLab/ccNetViz/issues/26](https://github.com/HelikarLab/ccNetViz/issues/26)
+- [https://github.com/HelikarLab/ccNetViz/issues/25](https://github.com/HelikarLab/ccNetViz/issues/26)
+- [https://github.com/HelikarLab/ccNetViz/issues/24](https://github.com/HelikarLab/ccNetViz/issues/26)
+- [https://github.com/HelikarLab/ccNetViz/issues/20](https://github.com/HelikarLab/ccNetViz/issues/26)
+- [https://github.com/HelikarLab/ccNetViz/issues/8](https://github.com/HelikarLab/ccNetViz/issues/26)
 
 
 
