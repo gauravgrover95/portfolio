@@ -140,7 +140,7 @@ In summary, following features were completed:
 
 Many many thanks to my mentor and supervisor Dr. Tomas Helikar for considering me worthy enough to provide this golden learning and contributing opportunity.
 
-My other awesomely experienced mentor Ales who helped me from time to time and boosted the progress of the project.
+My other awesomely experienced mentor Ales who helped me time to time and boosted the progress of the project.
 
 Google Summer of Code program for this wonderful learning experience to put my first baby steps in the open-source world. I hope to keep contributing back to develop amazing tech.
 
