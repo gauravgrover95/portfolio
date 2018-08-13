@@ -102,10 +102,10 @@ Also, some issues and improvements for future builds were documented. Details ca
 
 - [https://github.com/HelikarLab/ccNetViz/issues/23](https://github.com/HelikarLab/ccNetViz/issues/23)
 - [https://github.com/HelikarLab/ccNetViz/issues/26](https://github.com/HelikarLab/ccNetViz/issues/26)
-- [https://github.com/HelikarLab/ccNetViz/issues/25](https://github.com/HelikarLab/ccNetViz/issues/26)
-- [https://github.com/HelikarLab/ccNetViz/issues/24](https://github.com/HelikarLab/ccNetViz/issues/26)
-- [https://github.com/HelikarLab/ccNetViz/issues/20](https://github.com/HelikarLab/ccNetViz/issues/26)
-- [https://github.com/HelikarLab/ccNetViz/issues/8](https://github.com/HelikarLab/ccNetViz/issues/26)
+- [https://github.com/HelikarLab/ccNetViz/issues/25](https://github.com/HelikarLab/ccNetViz/issues/25)
+- [https://github.com/HelikarLab/ccNetViz/issues/24](https://github.com/HelikarLab/ccNetViz/issues/24)
+- [https://github.com/HelikarLab/ccNetViz/issues/20](https://github.com/HelikarLab/ccNetViz/issues/20)
+- [https://github.com/HelikarLab/ccNetViz/issues/8](https://github.com/HelikarLab/ccNetViz/issues/8)
 
 
 
