@@ -1,5 +1,6 @@
 ## Project Introduction
 
+
 ### Description
 
 ccNetViz is a high performance, lightweight and customizable client-side library aimed to solve the problem of visualizing and analysing complex network graphs on the web. It utilizes the power of parallely computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
@@ -9,9 +10,10 @@ The Library aims to break the efficiency limitation of visualizing large network
 My objective in the Google Summer of Code 2018 would be to extend ccNetViz to further improve its efficiency and implement the support for better data formatting.
 
 
-Work Done
+## Work Done
 
-Fix zoom for large networks
+
+### Fix zoom for large networks
 
 The library imposes a max-size limitation on the nodes to utilize maximum space available in the view. On zooming, the area under the mouse pointer must remain in focus for intuitive user experience. We proposed that the node under mouse pointer should also stay in focus when zoomed. 
 
@@ -19,7 +21,8 @@ But we was observed that due to the max-size limitation on the node, it was gett
 
 Commit history for resolution of this issue can be found here and the code merged by my mentor Ales can be found here.
 
-Implement client side SDF sprite-sheet generation
+
+### Implement client side SDF sprite-sheet generation
 
 Implementation of Signed Distance Fields (SDF) of commonly used text characters was performed by Znbiz in Google Summer of Code 2016. In the project report, the comparison of 3 available text drawing techniques and why SDF produces the highest quality text labels was discussed.
 
@@ -38,24 +41,24 @@ It was a challenge to optimizing the code from mapbox™ library to fit in the c
 Ultimately, the problem was solved and the JS module developed for this task can be found here.
 
 
-Test and debug client side SDF sprite-sheet generation
+### Test and debug client side SDF sprite-sheet generation
 
 Proper investment of time for testing and debugging was essential especially because of  the number of independent configuration variables mentioned below:
 
-Scale of graph
-Font-families
-Characters
-Font-sizes 
-Font-weight
-Italics
-Alignment
+* Scale of graph
+* Font-families
+* Characters
+* Font-sizes 
+* Font-weight
+* Italics
+* Alignment
 
 A number of artifacts for several reasons were observed. We found that the proper spacing in between characters produced majority of the issues. It was patched by developing another module that can be found here.
 
 Proper tweaking of configuration for both the modules was performed for making the modules production ready. Complete commit history for this task can be found here.
 
 
-Update the build-system
+### Update the build-system
 
 In the previous version, node-scripts were used to integrate webpack which loads the JS modules and google closure compiler which optimizes the compiled code.
 
@@ -69,7 +72,8 @@ The webpack build system and all the npm modules were updated. Most notably upda
 
 The corresponding commit history for the update process can be found here.
 
-Compute layouts in the background thread
+
+### Compute layouts in the background thread
 
 A significant work was done as part of GSoC 2017 by Renato Fabbri supporting several layouts for large graphs. This is one of the most important feature of the library.
 
@@ -91,14 +95,14 @@ Some documentation was written alongside. <here>, <here>
 
 Also, some issues and improvements for future builds were documented. Details can be found below:
 
-https://github.com/HelikarLab/ccNetViz/issues/23
-https://github.com/HelikarLab/ccNetViz/issues/26
-https://github.com/HelikarLab/ccNetViz/issues/25
-https://github.com/HelikarLab/ccNetViz/issues/24
-https://github.com/HelikarLab/ccNetViz/issues/20
-https://github.com/HelikarLab/ccNetViz/issues/8 
+- https://github.com/HelikarLab/ccNetViz/issues/23
+- https://github.com/HelikarLab/ccNetViz/issues/26
+- https://github.com/HelikarLab/ccNetViz/issues/25
+- https://github.com/HelikarLab/ccNetViz/issues/24
+- https://github.com/HelikarLab/ccNetViz/issues/20
+- https://github.com/HelikarLab/ccNetViz/issues/8 
 
-Future Works
+## Future Works
 
 In future, I believe the following tasks could further improve the library:
 
@@ -108,9 +112,7 @@ In future, I believe the following tasks could further improve the library:
 4. Hiveplot algorithm can be improved by giving more choice to the user like classification of nodes and axis orientations.
 
 
-
-
-Conclusion
+## Conclusion
 
 In summary following features were completed:
 
