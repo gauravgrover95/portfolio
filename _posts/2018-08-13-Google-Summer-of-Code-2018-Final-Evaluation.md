@@ -1,7 +1,7 @@
-## Project Introduction
+#### Project Introduction
 
 
-### Description
+#### Description
 
 [ccNetViz](http://helikarlab.github.io/ccNetViz/) is a high performance, lightweight and customizable client-side library aimed to solve the problem of visualizing and analysing complex network graphs on the web. It utilizes the power of parallely computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
 
@@ -11,7 +11,7 @@ My objective in the Google Summer of Code 2018 would be to extend ccNetViz to fu
 
 
 
-## Work Done
+### Work Done
 
 
 #### Fix zoom for large networks
@@ -109,7 +109,7 @@ Also, some issues and improvements for future builds were documented. Details ca
 
 
 
-## Future Works
+### Future Works
 
 In future, I believe the following tasks could further improve the library:
 
@@ -120,7 +120,7 @@ In future, I believe the following tasks could further improve the library:
 
 
 
-## Conclusion
+### Conclusion
 
 In summary following features were completed:
 
@@ -138,7 +138,7 @@ In summary following features were completed:
 
 
 
-## Acknowledgements
+### Acknowledgements
 
 Many many thanks to my mentor and supervisor Dr. Helikar for considering me worthy enough to provide this golden learning and contributing opportunity.
 
