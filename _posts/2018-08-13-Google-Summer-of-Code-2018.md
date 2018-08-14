@@ -3,7 +3,7 @@ title: Google Summer of Code 2018
 permalink: /GSoC18
 ---
 
-### Project Introduction
+### **Project Introduction**
 
 
 #### Description
