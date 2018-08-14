@@ -133,7 +133,7 @@ In summary, following features were completed:
 - Computed layout in the background thread
 - Fixed random layout value bug
 - Wrote basic documentation for some files of the code
-- Documented remaining low priority issues
+- Documented low priority issues
 
 
 ### Acknowledgments
