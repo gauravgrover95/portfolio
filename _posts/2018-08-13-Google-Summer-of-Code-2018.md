@@ -3,10 +3,10 @@ title: Google Summer of Code 2018
 permalink: /GSoC18
 ---
 
-### **Project Introduction**
+### Project Introduction
 
 
-#### **Description**
+#### Description
 
 [ccNetViz](http://helikarlab.github.io/ccNetViz/) is a high performance, lightweight, and customizable client-side library aimed to solve the problem of visualizing and analyzing complex network graphs on the web. It utilizes the power of parallelly computed web graphics technology, WebGL. Thus possess the potential to view tens of thousands of nodes.
 
