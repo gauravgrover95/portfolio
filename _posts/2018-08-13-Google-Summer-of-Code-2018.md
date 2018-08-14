@@ -1,6 +1,6 @@
 ---
 title: Google Summer of Code 2018
-permalink: /GSOC2018/
+permalink: /gsoc18/
 ---
 
 ### Project Introduction
